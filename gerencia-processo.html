@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Sistema Operacional</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="src/styles.css" />
+  </head>
+
+  <body>
+
+    <input type="checkbox" id="bt_menu">
+    <label for="bt_menu">&#9776;</label>
+
+    <header class="header">
+           
+      <a href="index.html">  
+      <img  class="jean" src="img/447d5d93-bf60-4232-8548-7f81b56b599c_200x200.png" alt="Logotipo da J.D Newtec">
+    </a>
+    <nav class="menu">
+      
+      <ul>
+          <li><a href="index.html">Home</a>
+            <ul>
+                <li><a href="empresa.html">A empresa</a> </a></li>
+            </ul></li>	
+          <li><a href="so.html">Sistema Operacional</a> </a>
+            <ul>
+            <li><a href="so.html">O que é S.O</a> </a></li>
+            </ul>
+          </li>		
+    <li><a href="/">Gerenciamentos</a>
+      <ul>
+          <li><a href="gerencia-memo.html">Gerenciamento de Memórias</a> </a></li>
+          <li><a href="gerencia-arqui.html">Gerenciamento de Arquivos</a> </a></li>
+          <li><a href="gerencia-processo.html">Gerenciamento de Processos<a> </a></li>
+      </ul></li>
+      
+    <li><a href="contato.html">Contato</a></li>	
+    <li><a href="src/relatorio-virtualBox.pdf" target="src/relatorio-virtualBox.pdf_blank" class="cordolink">Serviços Prestados</a></li>
+  </nav>
+  </header>
+  
+    <h1>Gerenciamento de Processos</h1>
+    <p>
+      O gerenciamento de processos é um dos conceitos fundamentais dos sistemas operacionais modernos.
+      No gerenciamento dos processos serão definidas as propriedades dos processos em execução,
+      e a maneira como cada um receberá o tempo de execução no processador.
+      A principal função do gerenciador de processos é exatamente a execução do processo no processador
+      de maneira adequada (considerando a prioridade do processo e a quantidade de processos gerenciados).<br/><br/></p>
+      
+      <p>Click no nome marcado para ver o link de Gerenciamento de Processos: <a href="https://pt.m.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_aos_Sistemas_Operacionais/Ger%C3%AAncia_de_Processos" target="https://pt.m.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_aos_Sistemas_Operacionais/Ger%C3%AAncia_de_Processos_blank" class="cordolink"><u>Gerenciamento de Processos</u></a></p>
+
+
+      <br/><h1>Categorias de Processos</h1>
+      <p>
+        Em um sistema multiprogramável, os processos passam por diferentes estados ao longo do seu processamento,
+        seja em função de eventos gerados pelo sistema operacional, seja pelo próprio processo.
+        Um processo ativo pode ter três estados diferentes:<br/>
+  
+        <br/><li> Execução (running)
+        Um processo está estado de execução quando está sendo processado efetivamente pela CPU,
+        ou seja, utilizando o processador. Em sistemas com um único processador,
+        somente um processo pode estar em estado de execução em um dado instante. 
+        Em sistemas com mais de uma CPU ou com CPU com mais de um núcleo, o número de processos que pode estar em estado de execução ao mesmo tempo é igual ao número de processadores existentes. Neste tipo de sistema,
+        também é possível que um mesmo processo esteja sendo executado em mais de um processador ao mesmo tempo.</li><br/>
+  
+        <br/><li> Pronto (ready) Um processo está no estado de pronto quando aguarda para ser executado.
+           O sistema operacional é o responsável por determinar a ordem e os critérios pelos quais os processos em estado de pronto devem fazer uso do GPU<li><br/>
+        
+        <br/><li>Podem existir diversos processos em estado de pronto aguardando para serem executados. Estes processos são organizados em uma lista encadeada e são ordenados pela sua importância, permitindo que os processos com prioridade mais alta sejam executados primeiro.
+            - Espera (wait) Um processo no estado de espera aguarda por algum evento externo ou por algum recurso para continuar sua execução, como por exemplo, aguardando alguma operação de entrada/saída.
+            Os processos no estado de espera também são organizados em uma lista encadeada e, assim que o evento esperado aconteça, o processo que aguardava o evento é então transferido para o estado de pronto.</li><br/>    
+  
+      </p><br/>
+      <p>Click nome marcado em negrito para ver o link de Categoria de Processos: <a href="https://pt.m.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_aos_Sistemas_Operacionais/Ger%C3%AAncia_de_Processos" target="https://pt.m.wikiversity.org/wiki/Introdu%C3%A7%C3%A3o_aos_Sistemas_Operacionais/Ger%C3%AAncia_de_Processos_blank" class="cordolink"><u>Categoria de Processos</u></a></p>
+
+      <br/> <h1>Tipos de Escalonamento</h1>
+      <p>
+       
+      O escalonamento de processos ou agendador de tarefas (em inglês scheduling) é uma atividade organizacional feita pelo escalonador (scheduler) da CPU ou de um sistema distribuído, possibilitando executar os processos mais viáveis e concorrentes, priorizando determinados tipos de processos, como os de I/O Bound e os CPU Bound.<br/>
+      <br/>O escalonador de processos de 2 níveis escolhe o processo que tem mais prioridade e menos tempo e coloca-o na memória principal, ficando os outros alocados em disco; com essa execução o processador evita ficar ocioso.<br/>
+  
+      <br/>Escalonador de Processos escolhe o processo que será executado pela CPU; O escalonamento é realizado com o auxílio do hardware; O escalonador deve se preocupar com a eficiência da CPU, pois o chaveamento de processos é complexo e custoso: Ele afeta desempenho do sistema e satisfação do usuário; O escalonador de processo é um processo que deve ser executado quando da mudança de contexto (troca de processo);<br/>
+  
+      <br/>Escalonador de curto prazo<br/>
+  
+      <br/>Seleciona entre os processos em estado de pronto que estão na memória, para serem executados pelo processador. O escalonador de curto prazo faz decisões de escalonamento muito mais frequentemente que os de médio e longo prazo.<br/>
+      
+      <br/>Escalonador de médio prazo<br/>
+      
+      <br/>Seleciona entre os processos que estão na memória virtual. Ele temporariamente remove o processo da memória principal e o coloca na memória secundária (swap) fazendo as operações de swapping in e swapping out.<br/>
+  
+      <br/>Escalonador de longo prazo<br/>
+      <br/>Seleciona os processos que estão na memória secundária e que serão levados para a memória principal. Geralmente este escalonador é responsável pelo Grau de Multiprogramação.<br/>
+      </p>
+      <p>Click no nome marcado em negrito para ver o link de Tipos de Escalonamento: <a href="https://pt.m.wikipedia.org/wiki/Escalonamento_de_processos" target="https://pt.m.wikipedia.org/wiki/Escalonamento_de_processos_blank" class="cordolink"><u>Tipos de Escalonamento</u></a></p>
+
+      <br><h1>Algoritmo Premptivos e não premptivos</h1>
+      <p>
+        Existem os algoritmos preemptivos e os não preemptivos.
+        Os preemptivos são algoritmos que permitem que um processo seja interrompido durante sua execução,
+        que seja por força de uma interrupção de entrada/saída, 
+        quer seja em decorrência da politica de escalonamento adotada e aplicada por parte do escalonador de processos ou simplesmente por força do término da execução do processo.
+        Após a interrupção deste processo, ocorre o que se chama de troca de contexto, que consiste em salvar o conteúdo dos registradores e a memória utilizada pelo processo e conceder a outro processo o privilégio de executar na CPU,
+        restaurando assim o contexto deste ultimo processo.<br/>
+  
+        <br/>Cabe ressaltar que nos algoritmos não preemptivos, por serem utilizados exclusivamente em sistemas monoprocessados, esse fato não ocorre, sendo cada programa executado até o fim.<br/>
+        <br/><p>Click nome marcado em negrito para ver o link de Algoritmo Premptivos e não premptivos: <a href="https://pt.m.wikipedia.org/wiki/Escalonamento_de_processos" target="https://pt.m.wikipedia.org/wiki/Escalonamento_de_processos_blank" class="cordolink"><u>Algoritmo Premptivos e não premptivos</u></a></p><br/>
+      </p>
+      
+   
+    
+  </body><br/>
+      <br/> <footer class="rodape">
+            <img  class="ifrj" src="img/logoifrj.png" alt="Logotipo da IFRJ"/><br/>
+            <br/><img class="gmaillogo"src="img/mail.png "><li>Gmail:jeangomes1567@gmail.com/<br/> Danielasantos1212@gmail.com</li><br/><br/>
+            <img class="whatsapplogo"src="img/whatsapp-logo-variant.png"><li>Whatsapp:<p>(21) 97557-1953 (21)96522-56687 </li><br/>
+            <img class="localizalogo"src="img/location-on-road.png"><li> </li><li>Localização: R. Vala da Divisa - Coelho da Rocha, São João de Meriti - RJ, 25550-110</li>
+    </div>
+ 
+    <ul></ul>
+
+</footer>
+</body>
+</html>

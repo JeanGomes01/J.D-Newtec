@@ -1,0 +1,274 @@
+html {
+  background: snow;
+}
+body {
+  max-width: 100%;
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 14px;
+  font-family: "Times New Roman", Times, serif;
+}
+/*classes do Cabeçalho e da cabeça do site*/
+ul,
+li,
+p {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  font-size: 1.2em;
+  font-family: "Times New Roman", Times, serif;
+}
+a {
+  color: white;
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+.header {
+  background-image: linear-gradient(snow, snow, orange);
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: -50px;
+}
+.header a {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 960px;
+}
+.inicio {
+  text-align: center;
+}
+.sub-titulo {
+  text-align: center;
+ 
+}
+.missao {
+  text-align: center;
+}
+.missao-text {
+  text-align: center;
+}
+.visao {
+  text-align: center;
+}
+.visao-text {
+  text-align: center;
+}
+.menu {
+  display: flex;
+  background-color: black;
+  font-family: Arial;
+}
+.menu ul {
+  font-size: 14px;
+  list-style: none;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.menu ul li {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.menu a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+.menu ul ul {
+  position: absolute;
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+.menu ul li:hover ul {
+  visibility: visible;
+}
+.menu a:hover {
+  background-color: #f4f4f4;
+  color: #555;
+}
+.menu ul ul li {
+  float: none;
+  border-bottom: solid 1px black;
+}
+.menu ul ul li a {
+  background-color: orange;
+}
+label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #222;
+  color: #fff;
+  font-family: Arial;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+}
+#bt_menu {
+  display: none;
+}
+label[for="bt_menu"] {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  label[for="bt_menu"] {
+    display: block;
+  }
+  #bt_menu:checked ~ .menu {
+    margin-left: 0;
+  }
+  .menu {
+    margin-top: 50px;
+    margin-left: -100%;
+    transition: all.4s;
+  }
+  .menu ul li {
+    width: 100%;
+    float: none;
+  }
+  .menu ul ul {
+    position: static;
+    overflow: hidden;
+    max-height: 0;
+    transition: all.4s;
+  }
+  .menu ul li:hover ul {
+    height: auto;
+    max-height: 200px;
+  }
+  .menu li {
+    margin-left: 5px;
+    padding: 10px;
+    display: flex;
+    margin: 0 10px 10px 10px;
+  }
+  /*******************************************************/
+
+  /*Classe para o corpo(body) do site*/
+  /*Classe do carousel*/
+  .container-carro {
+    width: 100px;
+    height: 960px;
+  }
+  .jean {
+    margin: 0px 10px 20px 0px;
+  }
+  .carousel-inner {
+    width: 100px;
+    height: 960px;
+    border-radius: 20px;
+  }
+
+  .h1 {
+    text-align: center;
+  }
+
+  .h2 {
+    text-align: center;
+  }
+  .h3 {
+    text-align: center;
+  }
+  .h4 {
+    text-align: center;
+  }
+
+  /**********************************************************************************/
+  .div {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    align-items: center;
+    box-shadow: 1px solid black;
+  }
+
+  img {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin: 0px 0px 0px 150px;
+  }
+  /*********************************************************/
+  /*Classe do footer*/
+}
+.rodape {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  margin: 100px 0px 0px 0px;
+  background-image: linear-gradient(orange, snow, snow);
+}
+/*Classe dos logos do Footer*/
+.ifrj {
+  display: flex;
+  float: left;
+  width: 100px;
+  height: 100px;
+}
+.gmaillogo {
+  display: flex;
+  justify-content: flex-end;
+  width: 50px;
+  height: 50px;
+}
+.whatsapplogo {
+  width: 50px;
+  height: 50px;
+}
+.localizalogo {
+  width: 50px;
+  height: 50px;
+}
+
+/*************************************************/
+
+.cordolink {
+  background-color: black;
+}
+.mapamental {
+  width: 200px;
+  height: 200px;
+}
+
+/*Classe do Formulário de contato*/
+.form-contato {
+  width: 100%;
+  margin: 0 auto;
+  background-image: radial-gradient(snow, snow, snow);
+}
+.pai {
+  margin: 10px;
+  margin: 0px 0px 0px 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+
+  border: 2px black outset;
+  box-shadow: 1px 1px 1px 000;
+}
+.nome {
+  width: 40em;
+  display: flex;
+  align-items: flex-star;
+}
+.email {
+  width: 40em;
+  display: flex;
+  align-items: flex-star;
+}
+.mensagem {
+  display: flex;
+  align-items: flex-star;
+  width: 170px;
+  height: 99px;
+}
